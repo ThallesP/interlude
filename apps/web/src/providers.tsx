@@ -1,22 +1,25 @@
-import type { ReactNode } from "react";
-import { ConvexReactClient } from "convex/react";
 import { ConvexBetterAuthProvider } from "@convex-dev/better-auth/react";
 import { ConvexQueryClient } from "@convex-dev/react-query";
+import { AuthUIProvider } from "@daveyplate/better-auth-ui";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
-import { AuthUIProvider } from "@daveyplate/better-auth-ui";
-import { useNavigate, Link } from "react-router-dom";
-
-import { env } from "@/env";
+import { ConvexReactClient } from "convex/react";
+import type { ReactNode } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Toaster } from "@/components/ui/sonner";
+import { env } from "@/env";
 import { authClient } from "@/lib/auth-client";
 
 function AuthLink({
 	href,
 	children,
 	className,
-}: { href: string; children: ReactNode; className?: string }) {
+}: {
+	href: string;
+	children: ReactNode;
+	className?: string;
+}) {
 	return (
 		<Link to={href} className={className}>
 			{children}

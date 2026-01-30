@@ -1,13 +1,13 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { RouterProvider, createBrowserRouter, Outlet } from "react-router-dom";
+import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 
 import "./index.css";
-import { Providers, AuthProvider } from "./providers";
+import { AccountPage } from "./pages/account";
+import { AuthPage } from "./pages/auth";
 import { HomePage } from "./pages/home";
 import { NotFoundPage } from "./pages/not-found";
-import { AuthPage } from "./pages/auth";
-import { AccountPage } from "./pages/account";
+import { AuthProvider, Providers } from "./providers";
 
 const router = createBrowserRouter([
 	{
