@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@base-ui/react": "^1.1.0",
+    "@convex-dev/better-auth": "^0.10.10",
     "@convex-dev/react-query": "^0.1.0",
     "@fontsource-variable/jetbrains-mono": "^5.2.8",
     "@interlude/backend": "workspace:*",
@@ -18,6 +19,7 @@
     "@tailwindcss/vite": "^4.1.17",
     "@tanstack/react-query": "^5.90.20",
     "@tanstack/react-query-devtools": "^5.91.2",
+    "better-auth": "1.4.9",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "convex": "^1.31.7",
